@@ -1,0 +1,75 @@
+﻿<div class="tw-max-w-4xl tw-mx-auto tw-px-4 tw-py-8 tw-bg-white tw-shadow-md tw-rounded-md">
+    <h2 class="tw-text-2xl tw-font-bold tw-mb-6 tw-text-gray-800">Profile</h2>
+    <p class="tw-text-sm tw-text-gray-500 tw-mb-4">
+        This information will be displayed publicly so be careful what you share.
+    </p>
+    <form class="tw-space-y-6">
+        <!-- Username -->
+        <div>
+            <label for="username" class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Username</label>
+            <input type="text"
+                   id="username"
+                   name="username"
+                   placeholder="workcation.com/janesmith"
+                   class="tw-mt-1 tw-block tw-w-full tw-rounded-md tw-border tw-border-gray-300 tw-shadow-sm focus:tw-ring-indigo-500 focus:tw-border-indigo-500 sm:tw-text-sm" />
+        </div>
+
+        <!-- About -->
+        <div>
+            <label for="about" class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">About</label>
+            <textarea id="about"
+                      name="about"
+                      rows="4"
+                      placeholder="Write a few sentences about yourself."
+                      class="tw-mt-1 tw-block tw-w-full tw-rounded-md tw-border tw-border-gray-300 tw-shadow-sm focus:tw-ring-indigo-500 focus:tw-border-indigo-500 sm:tw-text-sm"></textarea>
+        </div>
+
+        <!-- Profile Photo -->
+        <div>
+            <label class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Photo</label>
+            <div class="tw-mt-1 tw-flex tw-items-center">
+                <div class="tw-w-12 tw-h-12 tw-rounded-full tw-bg-gray-100 tw-flex tw-items-center tw-justify-center tw-overflow-hidden">
+                    <svg class="tw-h-6 tw-w-6 tw-text-gray-400"
+                         fill="currentColor"
+                         viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zM12 21.6c-5.289 0-9.6-4.311-9.6-9.6s4.311-9.6 9.6-9.6 9.6 4.311 9.6 9.6-4.311 9.6-9.6 9.6zm0-4.8c-2.652 0-4.8-2.148-4.8-4.8s2.148-4.8 4.8-4.8 4.8 2.148 4.8 4.8-2.148 4.8-4.8 4.8zm0-7.2c-1.322 0-2.4 1.078-2.4 2.4s1.078 2.4 2.4 2.4 2.4-1.078 2.4-2.4-1.078-2.4-2.4-2.4z"></path>
+                    </svg>
+                </div>
+                <button type="button"
+                        class="tw-ml-4 tw-inline-flex tw-items-center tw-px-4 tw-py-2 tw-border tw-border-gray-300 tw-rounded-md tw-shadow-sm tw-text-sm tw-font-medium tw-text-gray-700 tw-bg-white hover:tw-bg-gray-50 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-indigo-500">
+                    Change
+                </button>
+            </div>
+        </div>
+
+        <!-- Cover Photo -->
+        <div>
+            <label class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Cover photo</label>
+            <div class="tw-mt-1 tw-flex tw-justify-center tw-border-2 tw-border-dashed tw-border-gray-300 tw-rounded-md tw-px-6 tw-pt-5 tw-pb-6">
+                <div class="tw-space-y-1 tw-text-center">
+                    <svg class="tw-mx-auto tw-h-12 tw-w-12 tw-text-gray-400"
+                         stroke="currentColor"
+                         fill="none"
+                         viewBox="0 0 48 48"
+                         xmlns="http://www.w3.org/2000/svg"
+                         aria-hidden="true">
+                        <path d="M28 4H20C16.6863 4 14 6.68629 14 10V38C14 41.3137 16.6863 44 20 44H28C31.3137 44 34 41.3137 34 38V10C34 6.68629 31.3137 4 28 4Z"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"></path>
+                    </svg>
+                    <div class="tw-flex tw-text-sm tw-text-gray-600">
+                        <label for="file-upload"
+                               class="tw-relative tw-cursor-pointer tw-bg-white tw-rounded-md tw-font-medium tw-text-indigo-600 hover:tw-text-indigo-500 focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-indigo-500">
+                            <span>Upload a file</span>
+                            <input id="file-upload" name="file-upload" type="file" class="tw-sr-only" />
+                        </label>
+                        <p class="tw-pl-1">or drag and drop</p>
+                    </div>
+                    <p class="tw-text-xs tw-text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
